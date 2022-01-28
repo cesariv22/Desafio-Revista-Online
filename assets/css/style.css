@@ -9,10 +9,12 @@
 }
 .magazine-nav__logo {
   font-family: "Oswald", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   justify-self: center;
   align-self: center;
   color: #f3f4f6;
+  padding: 5px 0;
+  font-weight: 700;
 }
 .magazine-nav__menu {
   justify-self: end;
@@ -23,13 +25,15 @@
   display: inline-flex;
   list-style: none;
   align-items: center;
-  padding-right: 30px;
+  padding-right: 20px;
 }
 .magazine-nav__menu--list1 {
   display: none;
+  font-size: 14px;
 }
 .magazine-nav__menu--list2 {
-  padding-right: 20px;
+  padding-right: 10px;
+  font-size: 14px;
 }
 .magazine-nav__menu--list,
 .magazine-nav a {
@@ -38,20 +42,39 @@
 }
 .magazine-nav__menu--input {
   font-family: "Oswald", sans-serif;
+  font-size: 14px;
   background-color: #f3f4f6;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-  padding-left: 10px;
+  padding-left: 7px;
   border: 3px solid #81607f;
+  width: 5rem;
 }
 
 @media screen and (min-width: 768px) {
   .magazine-nav__menu--list1 {
     display: block;
     padding-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .magazine-nav__logo {
+    padding: 30px 0;
+    font-size: 50px;
+  }
+  .magazine-nav__menu {
+    font-size: 30px;
+    margin-right: 70px;
+  }
+  .magazine-nav__menu--list1, .magazine-nav__menu--list2 {
+    font-size: 30px;
+  }
+  .magazine-nav__menu--input {
+    font-size: 25px;
+    width: 15rem;
   }
 }
 /* Rows */
@@ -164,7 +187,7 @@
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 100%;
   }
 
   .col-md-12 {
@@ -272,10 +295,14 @@
   background-color: #f6eeee;
   font-family: "Oswald", sans-serif;
   color: #666666;
+  padding-bottom: 30px;
 }
 .magazine-main__news {
   margin-top: 10px;
   padding: 0 20px;
+}
+.magazine-main__news--title {
+  font-size: 20px;
 }
 .magazine-main__image {
   margin-top: 10px;
@@ -287,6 +314,7 @@
   background-image: url(https://picsum.photos/200/300?random=1);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 200px;
   border-radius: 5px;
@@ -299,6 +327,7 @@
   background-image: url(https://picsum.photos/200/300?random=2);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 200px;
   border-radius: 5px;
@@ -311,6 +340,7 @@
   background-image: url(https://picsum.photos/200/300?random=3);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 200px;
   border-radius: 5px;
@@ -323,6 +353,7 @@
   background-image: url(https://picsum.photos/200/300?random=4);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 200px;
   border-radius: 5px;
@@ -335,6 +366,7 @@
   background-image: url(https://picsum.photos/200/300?random=5);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 200px;
   border-radius: 5px;
@@ -347,6 +379,7 @@
   background-image: url(https://picsum.photos/200/300?random=6);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 200px;
   border-radius: 5px;
@@ -357,8 +390,23 @@
 }
 .magazine-main__image--paragraph {
   padding: 10px;
+  font-size: 14px;
 }
 
+@media screen and (min-width: 1200px) {
+  .magazine-main {
+    padding-top: 30px;
+  }
+  .magazine-main__news--title {
+    font-size: 30px;
+  }
+  .magazine-main__image--news1, .magazine-main__image--news2, .magazine-main__image--news3, .magazine-main__image--news4, .magazine-main__image--news5, .magazine-main__image--news6 {
+    height: 450px;
+  }
+  .magazine-main__image--paragraph {
+    font-size: 25px;
+  }
+}
 .magazine-aside {
   display: none;
   padding: 0 10px;
@@ -400,6 +448,14 @@
     display: block;
   }
 }
+@media screen and (min-width: 1200px) {
+  .magazine-aside__us--title, .magazine-aside__tags--title, .magazine-aside__news--title {
+    font-size: 30px;
+  }
+  .magazine-aside__us--paragraph, .magazine-aside__ulist, .magazine-aside__card {
+    font-size: 20px;
+  }
+}
 .magazine-subscribe {
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -409,11 +465,17 @@
   color: #f3f4f6;
 }
 .magazine-subscribe__title {
-  padding: 20px 0;
+  padding: 10px 0;
   line-height: 30px;
+  font-size: 25px;
+  font-weight: 400;
+}
+.magazine-subscribe__paragraph {
+  font-size: 16px;
 }
 .magazine-subscribe__login {
   padding-bottom: 20px;
+  margin-top: 5px;
 }
 .magazine-subscribe__login--input {
   font-family: "Oswald", sans-serif;
@@ -438,9 +500,41 @@
   padding: 0 7px;
   color: #f3f4f6;
 }
+.magazine-subscribe__login--sub:hover {
+  color: #60415f;
+  background-color: #f6eeee;
+  transition: 1.5s;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
+}
 
+@media screen and (min-width: 1200px) {
+  .magazine-subscribe {
+    padding-bottom: 20px;
+  }
+  .magazine-subscribe__title {
+    font-size: 35px;
+    padding: 30px 0 15px;
+  }
+  .magazine-subscribe__paragraph {
+    font-size: 25px;
+  }
+  .magazine-subscribe__login {
+    padding-top: 10px;
+  }
+  .magazine-subscribe__login--input {
+    width: 15rem;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  .magazine-subscribe__login--sub {
+    font-size: 20px;
+  }
+}
 .magazine-footer {
-  padding: 10px 0;
+  padding: 5px 0;
   text-align: center;
   background-color: #ec4c51;
   color: #f3f4f6;

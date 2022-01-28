@@ -7,12 +7,19 @@
     color: $color-white-gray;
 
     &__title {
-        padding: 20px 0;
+        padding: 10px 0;
         line-height: 30px;
+        font-size: $fs-xx-medium;
+        font-weight: $fw-regular;
+    }
+
+    &__paragraph {
+        font-size: $fs-medium;
     }
 
     &__login {
         padding-bottom: 20px;
+        margin-top: 5px;
     }
 
     &__login--input {
@@ -26,7 +33,7 @@
         -o-border-radius: 30px;
         padding-left: 7px;
         border: 3px solid $color-purple-2;
-}
+    }
 
     &__login--sub {
         font-family: $ff-oswald;
@@ -38,7 +45,43 @@
         -o-border-radius: 30px;
         padding: 0 7px;
         color: $color-white-gray;
+        &:hover {
+            color: $color-purple-1;
+            background-color: $color-pink;
+            transition: 1.5s;
+            -webkit-transition: 1.5s;
+            -moz-transition: 1.5s;
+            -ms-transition: 1.5s;
+            -o-transition: 1.5s;
 }
+    }
 }
 
+@include large-view {
+    .magazine-subscribe {
+        padding-bottom: 20px;
 
+        &__title {
+            font-size: $fs-x-large;
+            padding: 30px 0 15px;
+        }
+
+        &__paragraph {
+            font-size: $fs-xx-medium;
+        }
+
+        &__login {
+            padding-top: 10px;
+        }
+
+        &__login--input {
+            width: 15rem;
+            font-size: $fs-x-medium;
+            padding-left: 10px;
+        }
+
+        &__login--sub {
+            font-size: $fs-x-medium;
+        }
+    }
+}

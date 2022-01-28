@@ -39,11 +39,28 @@
         -moz-border-radius: 3px;
         -ms-border-radius: 3px;
         -o-border-radius: 3px;
-}
+    }
 }
 
 @include medium-view {
     .magazine-aside {
         display: block;
+    }
+}
+
+@include large-view {
+    .magazine-aside {
+
+        &__us--title,
+        &__tags--title,
+        &__news--title {
+            font-size: $fs-large;
+        }
+
+        &__us--paragraph,
+        &__ulist,
+        &__card {
+            font-size: $fs-x-medium;
+        }
     }
 }

@@ -5,7 +5,7 @@
 }
 
 @mixin large-view {
-    @media screen and (min-width: $min-large) {
+    @media screen and (min-width: $min-huge) {
         @content;
     }
 }
