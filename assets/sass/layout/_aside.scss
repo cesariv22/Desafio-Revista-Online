@@ -1,0 +1,49 @@
+.magazine-aside {
+    display: none;
+    padding: 0 10px;
+
+    &__us--title {
+        text-align: center;
+        padding: 10px 0;
+
+    }
+
+    &__us--paragraph {
+        font-size: $fs-small;
+        text-align: justify;
+    }
+
+    &__tags--title {
+        text-align: center;
+    }
+
+    &__ulist {
+        list-style: none;
+    }
+
+    &__news--title {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    &__card {
+        text-align: center;
+        margin: 0 35px;
+    }
+
+    &__card--image {
+        width: 100%;
+        height: auto;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+}
+}
+
+@include medium-view {
+    .magazine-aside {
+        display: block;
+    }
+}

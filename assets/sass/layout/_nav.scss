@@ -1,0 +1,62 @@
+.magazine-nav {
+    background-color: $color-wine-3;
+
+    &__logo {
+        font-family: $ff-oswald;
+        font-size: $fs-large;
+        justify-self: center;
+        align-self: center;
+        color: $color-white-gray;
+    }
+
+    &__menu {
+        justify-self: end;
+        align-self: center;
+        font-family: $ff-oswald;
+    }
+
+    &__menu--ulist {
+        display: inline-flex;
+        list-style: none;
+        align-items: center;
+        padding-right: 30px;
+    }
+
+    &__menu--list1 {
+        display: none;
+    }
+
+    &__menu--list2 {
+        padding-right: 20px;
+    }
+
+    &__menu--list,
+    a {
+        text-decoration: none;
+        color: $color-white-gray;
+    }
+
+    &__menu--input {
+        font-family: $ff-oswald;
+        background-color: $color-white-gray;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        padding-left: 10px;
+        border: 3px solid $color-purple-2;
+    }
+}
+
+@include medium-view {
+    .magazine-nav {
+
+        &__menu--list1 {
+            display: block;
+            padding-right: 30px;
+        }
+
+        
+    }
+}

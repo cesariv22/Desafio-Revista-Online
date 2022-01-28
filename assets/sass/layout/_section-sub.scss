@@ -1,0 +1,44 @@
+.magazine-subscribe {
+    text-align: center;
+    font-family: $ff-oswald;
+    font-size: $fs-x-medium;
+    padding: 0 1rem;
+    background-color: $color-pink-2;
+    color: $color-white-gray;
+
+    &__title {
+        padding: 20px 0;
+        line-height: 30px;
+    }
+
+    &__login {
+        padding-bottom: 20px;
+    }
+
+    &__login--input {
+        font-family: $ff-oswald;
+        background-color: $color-pink;
+        margin-right: 5px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        padding-left: 7px;
+        border: 3px solid $color-purple-2;
+}
+
+    &__login--sub {
+        font-family: $ff-oswald;
+        background-color: $color-purple-1;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        padding: 0 7px;
+        color: $color-white-gray;
+}
+}
+
+
